@@ -1,0 +1,10 @@
+check,result
+Rows pulled (incl. Dec 2018 warm-up),2588
+First candle (UTC date),2018-12-01
+Last candle (UTC date),2025-12-31
+Missing calendar days,0
+Duplicate days,0
+Non-positive closes,0
+Rows in analysis window,2557
+Missing values in window (any column),0
+Candle cut,00:00 UTC; close at 23:59:59 UTC = 08:00 next day in Singapore
