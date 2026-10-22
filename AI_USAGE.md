@@ -10,3 +10,4 @@ say how you checked the output (re-ran it, compared with a hand calculation, rea
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-21 | Zhang Enhao | Claude | proposal PDF | Drafting the one-page proposal from the group's design | Read and approved by all members |
 | 2026-10-21 | Zhang Enhao | Claude Code | repository skeleton | Folders, module stubs, notebook headers, README and templates | Reviewed every file before pushing |
+| 2026-10-22 | Deng Shenbojia | Claude | src/data.py, src/strategy.py | Drafting fetch_klines, load_daily and build_series (A1) | Offline test with a mocked Binance API (paging, fallback URL, missing-day assert); SMA lag recomputed by hand for one day; checked d = -(1 - s) r and the cost total; real-data numbers compared with the trial run after the local pull |
