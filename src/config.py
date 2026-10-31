@@ -1,4 +1,4 @@
-"""Pre-registered parameters. Committed before any inference was run.
+"""Pre-registered parameters. See "Pre-registered design" in README.md for when each was fixed.
 
 Do not change a value without telling the group first and adding a line to
 "Deviations from plan" in README.md.

@@ -68,7 +68,7 @@ Following Prof Qiu's guidance on our topic note (17 Sep 2026), the project stays
 
 ## 2 · Pre-registered design
 
-Every parameter lives in [`src/config.py`](src/config.py) and was committed on 21 Oct 2026, before any inference was run. Nothing was tuned on the data.
+Every parameter lives in [`src/config.py`](src/config.py). The rule, the sample, the sub-periods and the cost were set in the topic note of 17 Sep 2026; the block-length rule, B and the seed were committed on 21 Oct 2026. One pilot run that day tested the pipeline before the commit. No parameter changed after it, and nothing was tuned on the data.
 
 | Parameter | Value |
 | :-- | :-- |
@@ -81,7 +81,7 @@ Every parameter lives in [`src/config.py`](src/config.py) and was committed on 2
 | Transaction cost | 0.1% per position switch (Binance standard taker fee) |
 | Test | two-sided, 5% level |
 
-**Deviations from plan:** none. `src/config.py` is unchanged since commit `7afe1ef`.
+**Deviations from plan:** none. No parameter value has changed since commit `7afe1ef`.
 
 ## 3 · Data
 
@@ -163,7 +163,7 @@ Zero sits in the middle of the bootstrap distribution, far from either tail. The
 
 ### 5.2 Why the bootstrap interval is *narrower*
 
-$d$ has a **negative** lag-1 autocorrelation (ρ₁ = −0.11; Ljung–Box at lag 10 rejects independence, p < 10⁻¹⁸). Negative dependence makes the i.i.d. standard error too large, so the honest interval is tighter, not wider. Two independent routes agree:
+$d$ has a **negative** lag-1 autocorrelation (ρ₁ = −0.11; Ljung–Box at lag 10 rejects independence, although that test overstates the evidence when variance clusters). Negative dependence makes the i.i.d. standard error too large, so the honest interval is tighter, not wider. Two independent routes agree:
 
 | Route | Standard error | vs t-test |
 | :-- | :--: | :--: |
