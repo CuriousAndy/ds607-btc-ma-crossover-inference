@@ -8,4 +8,7 @@
 
 ## Notes
 
-To be completed at submission: anything that was handed over or shared between members.
+- Work was re-allocated once, on 21 Oct 2026: the block bootstrap moved from the group leader to Deng Shenbojia, and the robustness notebook (05) moved to Ma Tianjiao.
+- Shared code: notebooks 03, 04 and 05 call Ma's `t_test_mean()` and Deng's `mbb_ci()` / `mbb_test()`. Ma first ran 04 and 05 with a temporary local bootstrap until Deng's `src/bootstrap.py` was merged; the results were identical, and the final notebooks use the shared function. Deng's notebook 03 uses Ma's `variance_factor()` as a cross-check.
+- Review: the group leader re-ran every node from a clean kernel when it was submitted (logged in AI_USAGE.md) and ran a final clean-environment reproduction on 3 Nov 2026.
+- Slides: each member built their own pages in a shared deck; the group leader wrote the opening, takeaway and limitations pages and merged the final PDF.
