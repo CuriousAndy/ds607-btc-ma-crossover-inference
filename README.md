@@ -242,6 +242,7 @@ One day dominates the right tail: on 12 March 2020 BTC fell about 40% (log retur
 | **Bootstrap accuracy** | under negative autocorrelation the block bootstrap slightly under-covers (93.8% in simulation) |
 | **Costs** | flat 0.1% per switch; no slippage, spread or funding |
 | **Sample window** | 2019–2025 only |
+| **Model assumptions** | the block bootstrap assumes weak dependence and some stability over time, which we did not verify for d; the simulated DGPs share features with d but none matches it exactly |
 
 ## 7 · Reproduce
 
@@ -255,7 +256,8 @@ jupyter nbconvert --to notebook --execute --inplace notebooks/0*.ipynb
 
 - Python 3.12; package versions are pinned in [`requirements.txt`](requirements.txt).
 - The raw data is committed, so no network access is needed. If `data/raw/` is empty, notebook 01 pulls it from Binance first.
-- Run time: about 2–3 minutes for notebook 04 (the simulation), under 30 seconds for each of the others.
+- Run time: about 3 minutes in total, most of it notebook 04 (the simulation).
+- Tested on 3 Nov 2026 from a fresh clone in a new virtual environment: all five notebooks ran and every table in `outputs/tables/` reproduced exactly.
 - All randomness comes from `np.random.default_rng(607)`, so every number above reproduces exactly.
 
 ## 8 · Repository map
